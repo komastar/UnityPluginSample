@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>A:\UnityPluginSample\ThirdParty\WildMiniPlugin\x64\Release\WildMiniCore.dll</FullPath>
+      <FullPath>A:\UnityPluginSample\ThirdParty\WildMiniPlugin\Build\x64_Release\WildMiniCore.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

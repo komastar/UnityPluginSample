@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WildMiniPlugin : MonoBehaviour
+namespace WildMini
 {
-    // Start is called before the first frame update
-    void Start()
+    public class WildMiniPlugin
     {
-        Debug.Log(WildMini.WildMiniObject.CoreTest());
-        Debug.Log(WildMini.WildMiniObject.CoreTest());
-        Debug.Log(WildMini.WildMiniObject.CoreTest());
-    }
+        [System.Runtime.InteropServices.DllImport("WildMiniCore.dll")]
+        public static extern int CoreTest();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public static int CoreTestPublic()
+        {
+            return CoreTest();
+        }
     }
 }
